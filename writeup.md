@@ -11,18 +11,18 @@ we can confirm that this is an actual jpeg file
 we run "strings" on this file to check to see are any strings attached to this .jpeg file
 
 >....
-....
-cv;\)
-8)s%
-ZU]#
-'-c+
-sn}&;
-aBVz
-%f8U
-Z"g/i
-Lv#''vh
-I wanna be the very best, Like no one ever was....
-password is the fast, may be the fastest...
+>....
+>cv;\)
+>8)s%
+>ZU]#
+>'-c+
+>sn}&;
+>aBVz
+>%f8U
+>Z"g/i
+>Lv#''vh
+>I wanna be the very best, Like no one ever was....
+>password is the fast, may be the fastest...
 
 ok we can confirm that this file has something hiding in it.
 
@@ -39,8 +39,8 @@ And the fastest pokemon as of now is Regieleki with a speed stat of 200
 now if we try to extact the hidden file from the "Ash.jpg" file using the steghide tool and for the passphrase we use "Regieleki" we get
  
 >$ steghide extract -sf Ash.jpeg
-Enter passphrase: 
-wrote extracted data to "flag.txt".
+>Enter passphrase: 
+>wrote extracted data to "flag.txt".
 
 the flag.txt has some giberish which is base64 encoded. After we dcode that we get our flag!
 
